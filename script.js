@@ -56,5 +56,5 @@ video.addEventListener('play', ()=> {
     displaySize = {width, height};
     faceapi.matchDimensions(canvas, displaySize);
 
-    setInterval(detect, 100);
+    setInterval(detect, 1000);
 })
