@@ -28,10 +28,8 @@ Promise.all([
 
 
 async function detect() {
-    const detections = await faceapi.detectAllFaces(video)
-                                .withFaceLandmarks()
-                                .withFaceExpressions()
-                                .withAgeAndGender();
+    const detections = await faceapi.detectAllFaces(video).withFaceLandmarks().withFaceExpressions()
+    .withAgeAndGender();
     //console.log(detections);
     
     ctx.clearRect(0,0, width, height);
